@@ -3,10 +3,11 @@ const webpack = require("webpack");
 
 module.exports = {
   entry: {
-    index: "./src/index.js"
+    index: "./src/index.js",
+    app: "./src/App.js"
   },
   output: {
-    path: __dirname,
+    path: path.join(__dirname, 'dist'),
     filename: "[name].js"
   },
   mode: "development",
