@@ -3,11 +3,10 @@ const webpack = require("webpack");
 
 module.exports = {
   entry: {
-    index: "./src/index.js",
-    app: "./src/App.js"
+    index: "./src/index.js"
   },
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, "dist"),
     filename: "[name].js"
   },
   mode: "development",
@@ -29,7 +28,7 @@ module.exports = {
         test: /.(png|jpg|gif|jpeg)$/,
         use: [
           {
-            loader: "url-loader",
+            loader: "file-loader",
             options: {
               limit: 10240
             }
@@ -39,6 +38,20 @@ module.exports = {
       {
         test: /.(otf|woff|woff2|eot|ttf)$/,
         use: "file-loader"
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: "babel-loader"
+          },
+          {
+            loader: "react-svg-loader",
+            options: {
+              jsx: true
+            }
+          }
+        ]
       }
     ]
   },
