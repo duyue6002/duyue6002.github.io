@@ -1,13 +1,12 @@
 import React from "react";
-import Profile from './components/Profile';
+import Profile from "./components/Profile";
+import Blog from "./components/Blog";
 import "./App.less";
 
 function App() {
   return (
     <div className="App">
-      <div className="content">
-        < Profile />
-      </div>
+      <Profile />
     </div>
   );
 }

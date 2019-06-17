@@ -1,24 +1,48 @@
-.left {
-  display: flex;
-  flex-direction: column;
+.profile {
+  position: relative;
+  overflow: hidden;
 }
 
-.name {
+.left {
   float: left;
-  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.right {
+  float: right;
+  width: 40%;
 }
 
 .zig {
+  max-width: 80%;
+  margin-top: 10%;
+}
+
+.personalImage {
   display: block;
-  max-width: 35%;
+  width: 100%;
+  float: right;
+  top: 5px;
+  margin: 0 0 -4px 0;
+  padding: 0;
 }
 
-.icon {
-  width: 5%;
-  padding: 0 0 0 1%;
+h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 4vw;
+  z-index: 999;
+  padding: 0 1%;
 }
 
-.icon:hover {
-  opacity: .5;
-  filter: alpha(opacity=100);
+h2 {
+  font-family: 'Quicksand', 'Helvetica', sans-serif;
+  background: #4a84ff;
+  float: right;
+  padding: 15px;
+  margin: 0 0 8px 0;
+  font-size: 1em;
+  text-align: right;
+  width: 120%;
 }
