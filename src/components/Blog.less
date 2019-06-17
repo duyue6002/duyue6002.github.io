@@ -1,0 +1,42 @@
+h3 {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 3vw;
+  padding: 0 0 0 1%;
+  margin: 0 0 1% 0;
+  display: block;
+  clear: both;
+}
+
+#icons {
+  margin: 0 auto;
+}
+
+.col {
+  margin: 0 1.5%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.col-3 {
+  &:extend(.col);
+  width: 29%;
+}
+
+.notes {
+  text-align: center;
+  padding: 1rem;
+
+  & a {
+    margin: 0 0 2rem 0;
+
+    &>svg {
+      width: 8vw;
+      height: 8vw;
+    }
+  }
+
+  & p {
+    margin: 0 0 1rem 0;
+    font-size: 2vw;
+  }
+}
