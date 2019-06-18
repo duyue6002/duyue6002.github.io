@@ -8,7 +8,7 @@ class Blog extends React.PureComponent {
   render() {
     return (
       <div className="blog">
-        <h3>博客 & 笔记</h3>
+        <h3>Blog & Notes</h3>
         <div id="icons">
           <div className="col-3 notes">
             <a href="#">

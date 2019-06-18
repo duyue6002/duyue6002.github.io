@@ -1,6 +1,6 @@
 const info = {
   name: "Timothée Chalamet",
-  job: "actor"
+  job: "Actor"
 };
 
 export default info;
