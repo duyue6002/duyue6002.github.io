@@ -1,13 +1,18 @@
 import React from "react";
 import Profile from "./components/Profile";
 import Blog from "./components/Blog";
+import Repos from "./components/Repos";
+import Footer from './components/Footer';
 import "./App.less";
 
 function App() {
   return (
     <div className="App">
-      <Profile />
-      <Blog />
+      <div className="content">
+        <Profile />
+        <Blog />
+      </div>
+      <Footer />
     </div>
   );
 }
